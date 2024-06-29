@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./theme/theme-toggle";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
 
   const navigation = [
-    { title: "Home", path: "/" },
+    // { title: "Home", path: "/" },
     { title: "About", path: "" },
     { title: "Contacts", path: "" },
     { title: "Pricing", path: "" },
@@ -30,6 +31,9 @@ const Navbar = () => {
           }`}
         >
           <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+            <li>
+              <ThemeToggle />
+            </li>
             {navigation.map((item, idx) => {
               return (
                 <li
