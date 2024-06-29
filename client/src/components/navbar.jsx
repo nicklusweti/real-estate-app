@@ -7,7 +7,6 @@ const Navbar = () => {
   const [state, setState] = useState(false);
 
   const navigation = [
-    // { title: "Home", path: "/" },
     { title: "About", path: "" },
     { title: "Contacts", path: "" },
     { title: "Pricing", path: "" },
@@ -17,7 +16,7 @@ const Navbar = () => {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/" className="font-bold text-2xl">
-            Nest<span className="text-muted-foreground">Finder.</span>
+            Nest<span className="text-primary">Finder.</span>
           </a>
           <div className="md:hidden">
             <Button variant="ghost" onClick={() => setState(!state)}>
